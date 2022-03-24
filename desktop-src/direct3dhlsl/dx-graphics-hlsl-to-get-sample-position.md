@@ -13,7 +13,7 @@ api_location:
 
 # GetSamplePosition (DirectX HLSL Texture Object)
 
-Gets the position of the specified sample.
+Gets the position of the specified sample, relative to the pixel's center.
 
 ret Object.GetSamplePosition( int s );
 
@@ -36,7 +36,7 @@ ret Object.GetSamplePosition( int s );
 
 ## Return Value
 
-Returns the (x,y) sample position, a two-component floating-point vector.
+Returns the (x,y) sample position, a two-component floating-point vector. It is an offset from the center of the pixel.
 
 ## Minimum Shader Model
 
